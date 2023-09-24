@@ -1,0 +1,42 @@
+O Python possui um módulo nativo para trabalharmos com datas e horas: o `datetime`.
+
+Com ele podemos criar:
+
+- objetos de data
+- objetos de data e hora
+- realizar cálculos entre datas e horas
+- configurar timezone
+- entre outros...
+
+# precisamos importar o módulo datetime para trabalhar com datas e horas
+import datetime
+
+data = datetime.date(year=2022, month=1, day=1)
+data = datetime.date(2022, 4, 29)
+print(data)
+2022-04-29
+
+type(data)
+datetime.date
+
+# acessando apenas o ano
+print(data.year)
+2022
+
+# acessando o mês
+print(data.month)
+4
+
+# acessando o dia
+print(data.day)
+1
+
+# método today()
+dia_atual = datetime.date.today()
+
+print('dia atual: ' + str(dia_atual))
+dia atual: 2023-09-24
+
+print(f"Ano: {data.year} - Mês: {data.month} - Dia: {data.day}")
+Ano: 2022 - Mês: 4 - Dia: 29
+
